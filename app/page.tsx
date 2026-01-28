@@ -10,7 +10,7 @@ export default function Home() {
           <h1 className="text-5xl font-heading font-bold text-[var(--color-primary)]">
             Wujudkan Impian Anda Bersama Koperasi Terpercaya
           </h1>
-          <p className="text-xl text-[var(--color-medium-gray)] max-w-3xl mx-auto">
+          <p className="text-xl text-[var(--color-medium-gray)] mx-auto">
             SMART — Sejahtera, Mandiri, Amanah, Responsif, dan Terpercaya
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
