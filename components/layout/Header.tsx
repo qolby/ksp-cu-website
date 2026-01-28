@@ -226,9 +226,15 @@ export function Header() {
 
                 {/* Navigation Links */}
                 <nav className="flex-1 px-6 py-8">
-                  <ul className="space-y-2">
-                    {navigationItems.map((item) => (
-                      <li key={item.href}>
+                  <ul className="space-y-1">
+                    {siteConfig.navigation.main.map((item, index) => (
+                      <motion.li
+                        key={item.href}
+                        custom={index}
+                        variants={menuItemVariants}
+                        initial="hidden"
+                        animate="visible"
+                      >
                         <Link
                           href={item.href}
                           onClick={() => setIsMobileMenuOpen(false)}
