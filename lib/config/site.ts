@@ -83,6 +83,6 @@ export const siteConfig = {
       description: "Membangun kepercayaan melalui layanan profesional dan akuntabel"
     }
   ]
-} as const;
+};
 
 export type SiteConfig = typeof siteConfig;

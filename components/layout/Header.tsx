@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { navigationItems } from '@/lib/config/site';
+import { siteConfig } from '@/lib/config/site';
 import { Button } from '@/components/ui/button';
 
 export function Header() {
@@ -71,7 +71,7 @@ export function Header() {
 
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center space-x-1">
-              {navigationItems.map((item) => (
+              {siteConfig.navigation.main.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
@@ -155,7 +155,7 @@ export function Header() {
                 {/* Mobile Navigation Links */}
                 <nav className="flex-1 px-6 py-8">
                   <ul className="space-y-2">
-                    {navigationItems.map((item) => (
+                    {siteConfig.navigation.main.map((item) => (
                       <li key={item.href}>
                         <Link
                           href={item.href}
